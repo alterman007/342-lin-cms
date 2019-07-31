@@ -90,7 +90,7 @@ class UsersCtl {
     const token = Auth.genToken(only(user, 'username scope id'));
 
     ctx.cookies.set(jwtCookieName, token);
-    ctx.redirect('http://47.110.95.92/api/users');
+    ctx.redirect('http://127.0.0.1:8080');
     // ctx.body = { token };
   }
 }

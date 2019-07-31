@@ -7,8 +7,13 @@
   <title>Document</title>
 </head>
 <body>
-  <a target="_blank" href="https://oapi.dingtalk.com/connect/qrconnect?appid=dingoahed9fulq5pu3nxew&response_type=code&scope=snsapi_login&state=STATE&redirect_uri=http://local.xujsp.com/api/login/ding">
+  <a target="_blank" href="">
     扫码登录
   </a>
+  <script>
+    const to = encodeURIComponent('http://47.110.95.92/api/login/ding');
+    const a = document.querySelector('a');
+    a.href = `https://oapi.dingtalk.com/connect/qrconnect?to=local&appid=dingoahed9fulq5pu3nxew&response_type=code&scope=snsapi_login&state=STATE&redirect_uri=${to}`;
+  </script>
 </body>
 </html>
