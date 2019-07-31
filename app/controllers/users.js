@@ -90,7 +90,7 @@ class UsersCtl {
     const token = Auth.genToken(only(user, 'username scope id'));
 
     ctx.cookies.set(jwtCookieName, token);
-    ctx.redirect('http://local.xujsp.com:3000/api/users');
+    ctx.redirect('http://local.xujsp.com/api/users');
     // ctx.body = { token };
   }
 }
